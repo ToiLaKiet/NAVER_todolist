@@ -8,10 +8,10 @@ function App() {
     <div className="container">
       <Header/>
       <div className="content">
-          <img src={TaskFlow} alt="NAVER Vietnam AI Hackathon" className="logo" />
-          <div className="greeting">
-            <p className="hello">Xin chào! 안녕하세요!</p>
-            <p className="subtitle">Hello World</p>
+        <img src={TaskFlow} alt="NAVER Vietnam AI Hackathon" className="logo" />
+        <div className="greeting">
+          <p className="hello">Xin chào! 안녕하세요!</p>
+          <p className="subtitle">Hello World</p>
         </div>
       </div>
       <img className="graphic" src={hackathonGraphic} alt="" />

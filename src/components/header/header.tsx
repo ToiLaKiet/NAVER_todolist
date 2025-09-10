@@ -1,6 +1,7 @@
 import styles from './header.module.css';
 import TaskFlowNoTitle from '../../assets/logo_without_title.svg'
-import React, { useState } from 'react'
+import { useState } from 'react';
+import '@coreui/coreui/dist/css/coreui.min.css'; 
 import {
   CButton,
   CCollapse,
@@ -21,11 +22,12 @@ import {
 } from '@coreui/react'
 
 function Header() { 
-  const [visible, setVisible] = useState(false)
-  return (
-    <CNavbar expand="lg" className="bg-body-tertiary">
+    const [visible, setVisible] = useState(false)
+    return (
+    <CNavbar expand="lg" className={styles.Navbar}>
       <CContainer fluid>
-        <CNavbarBrand href="#">Navbar</CNavbarBrand>
+        <img src={TaskFlowNoTitle} alt="NAVER Vietnam AI Hackathon" style={{ height: '40px', marginRight: '10px'}} />
+        <CNavbarBrand href="#">TaskFlow</CNavbarBrand>
         <CNavbarToggler onClick={() => setVisible(!visible)} />
         <CCollapse className="navbar-collapse" visible={visible}>
           <CNavbarNav className="me-auto">
@@ -35,7 +37,7 @@ function Header() {
               </CNavLink>
             </CNavItem>
             <CNavItem>
-              <CNavLink href="#">Link</CNavLink>
+              <CNavLink href="#">Calendar</CNavLink>
             </CNavItem>
             <CDropdown variant="nav-item" popper={false}>
               <CDropdownToggle color="secondary">Dropdown button</CDropdownToggle>
