@@ -4,30 +4,33 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #ECECBB;
-  color: white;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
+  width: 300vh; /* Chiếm toàn bộ chiều rộng */
+  height: 100vh; /* Chiếm toàn bộ chiều cao của viewport */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 8%;
-  border: red solid 1px;
+  margin: 0; /* Đảm bảo không có khoảng cách bên ngoài */
+  padding: 0; /* Đảm bảo không có khoảng cách bên trong */
+  box-sizing: border-box; /* Bao gồm padding và border trong kích thước */
+  justify-content: center; /* Căn giữa theo chiều ngang */
 }
 
 .content {
-  flex: 1;
+  display: flex;
   width: 100%;
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  height: 100%;
 }
 
 .logo {
   width: 100%;
-  max-width: 600px;
   height: auto;
   margin-bottom: 3rem;
 }
@@ -49,6 +52,6 @@ body {
 }
 
 .graphic {
-  width: 500px;
+  width: 100px;
   height: auto;
 }

@@ -26,9 +26,10 @@ function Header() {
     return (
     <CNavbar expand="lg" className={styles.Navbar}>
       <CContainer fluid>
-        <img src={TaskFlowNoTitle} alt="NAVER Vietnam AI Hackathon" style={{ height: '40px', marginRight: '10px'}} />
+        <img src={TaskFlowNoTitle} alt="TaskFlowLogo" style={{ height: '40px', marginRight: '10px'}} />
         <CNavbarBrand href="#">TaskFlow</CNavbarBrand>
         <CNavbarToggler onClick={() => setVisible(!visible)} />
+        <></>
         <CCollapse className="navbar-collapse" visible={visible}>
           <CNavbarNav className="me-auto">
             <CNavItem>
@@ -43,7 +44,7 @@ function Header() {
               <CDropdownToggle color="secondary">Dropdown button</CDropdownToggle>
               <CDropdownMenu>
                 <CDropdownItem href="#">Action</CDropdownItem>
-                <CDropdownItem href="#">Another action</CDropdownItem>
+                <CDropdownItem href="./ok">Another action</CDropdownItem>
                 <CDropdownDivider />
                 <CDropdownItem href="#">Something else here</CDropdownItem>
               </CDropdownMenu>
